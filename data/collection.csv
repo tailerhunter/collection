@@ -1,5 +1,5 @@
-id,title,year,genre,director,runtime,image
-spirited-away,Spirited Away,2001,Animation; Fantasy,Hayao Miyazaki,125,
+id,title,year,genre,studio,hours,image
+minecraft,Minecraft,2011,Sandbox;Mojang,300,
 princess-bride,The Princess Bride,1987,Adventure; Comedy,Rob Reiner,98,
 jurassic-park,Jurassic Park,1993,Adventure; Sci-Fi,Steven Spielberg,127,
 toy-story,Toy Story,1995,Animation; Comedy,John Lasseter,81,
