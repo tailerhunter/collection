@@ -1,0 +1,27 @@
+# SETTINGS: how your collection's website looks.
+#
+# Each line is a setting name, a colon, then its value.
+# Lines that start with # are notes. The website ignores them.
+# Field names (like title or genre) must match the first row of
+# collection.csv. The README has the full list of settings.
+
+title: Movie Night
+tagline: Twenty-four movies worth a big bowl of popcorn
+by: CS 1101
+about: Click any movie to see its reviews, and what to watch next.
+theme: gallery
+items: movies
+
+# The cards in the gallery
+card title: title
+card subtitle: year
+card image: image
+card shape: tall
+
+# Search, filters and sorting
+search: title, director
+filters: genre, director
+sort: title, year, runtime
+
+# The fields on each movie's page, in this order
+details: year, genre, director, runtime

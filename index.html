@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Collection</title>
+<link rel="stylesheet" href="engine/style.css">
+</head>
+<body class="theme-gallery">
+<div id="page">
+  <header id="top">
+    <h1 id="title">Loading the collection…</h1>
+    <p id="tagline" hidden></p>
+    <p id="byline" hidden></p>
+    <p id="about" hidden></p>
+  </header>
+  <nav id="tools" aria-label="Tools">
+    <button id="btn-surprise" type="button">🎲 Surprise me</button>
+    <button id="btn-ask" type="button">Ask the database</button>
+    <button id="btn-draft" type="button">Test a draft</button>
+    <button id="btn-problems" type="button">Checking…</button>
+  </nav>
+  <div id="notice" hidden></div>
+  <section id="controls" aria-label="Search, filter and sort">
+    <label id="search-box"><span class="label">Search</span>
+      <input id="search" type="search" placeholder="Search…" autocomplete="off">
+    </label>
+    <div id="filters"></div>
+    <label id="sort-box"><span class="label">Sort by</span> <select id="sort"></select></label>
+  </section>
+  <p id="count"></p>
+  <main id="grid" aria-live="polite"></main>
+  <p id="help"><kbd>/</kbd> search &middot; <kbd>←</kbd> <kbd>→</kbd> previous and next item &middot; <kbd>Esc</kbd> close</p>
+</div>
+<div id="panel" hidden role="dialog" aria-modal="true" aria-labelledby="panel-title">
+  <div id="panel-box">
+    <div id="panel-head"><h2 id="panel-title"></h2><button id="panel-close" type="button" aria-label="Close">×</button></div>
+    <div id="panel-body"></div>
+  </div>
+</div>
+
+<!-- The engine. Your collection lives in the data/ folder. -->
+<script src="engine/database.js"></script>
+<script src="engine/draft.js"></script>
+<script src="engine/app.js"></script>
+</body>
+</html>
